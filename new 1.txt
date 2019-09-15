@@ -1,0 +1,262 @@
+[SearchAgent] using function depthFirstSearch
+[SearchAgent] using problem type PositionSearchProblem
+Start: (5, 5)
+digite 4242
+Start's successors: [((5, 4), 'South', 1), ((4, 5), 'West', 1)]
+Stacks Criadas
+Avanca iMaxDepth 1
+estado atual (5, 5)
+sucessors [((5, 4), 'South', 1), ((4, 5), 'West', 1)]
+estado atual (4, 5)
+sucessors [((5, 5), 'East', 1), ((3, 5), 'West', 1)]
+Avanca iMaxDepth 2
+estado atual (5, 5)
+sucessors [((5, 4), 'South', 1), ((4, 5), 'West', 1)]
+estado atual (4, 5)
+sucessors [((5, 5), 'East', 1), ((3, 5), 'West', 1)]
+estado atual (3, 5)
+sucessors [((4, 5), 'East', 1), ((2, 5), 'West', 1)]
+Avanca iMaxDepth 3
+estado atual (5, 5)
+sucessors [((5, 4), 'South', 1), ((4, 5), 'West', 1)]
+estado atual (4, 5)
+sucessors [((5, 5), 'East', 1), ((3, 5), 'West', 1)]
+estado atual (3, 5)
+sucessors [((4, 5), 'East', 1), ((2, 5), 'West', 1)]
+estado atual (2, 5)
+sucessors [((3, 5), 'East', 1), ((1, 5), 'West', 1)]
+Avanca iMaxDepth 4
+estado atual (5, 5)
+sucessors [((5, 4), 'South', 1), ((4, 5), 'West', 1)]
+estado atual (4, 5)
+sucessors [((5, 5), 'East', 1), ((3, 5), 'West', 1)]
+estado atual (3, 5)
+sucessors [((4, 5), 'East', 1), ((2, 5), 'West', 1)]
+estado atual (2, 5)
+sucessors [((3, 5), 'East', 1), ((1, 5), 'West', 1)]
+estado atual (1, 5)
+sucessors [((1, 4), 'South', 1), ((2, 5), 'East', 1)]
+Avanca iMaxDepth 5
+estado atual (5, 5)
+sucessors [((5, 4), 'South', 1), ((4, 5), 'West', 1)]
+estado atual (4, 5)
+sucessors [((5, 5), 'East', 1), ((3, 5), 'West', 1)]
+estado atual (3, 5)
+sucessors [((4, 5), 'East', 1), ((2, 5), 'West', 1)]
+estado atual (2, 5)
+sucessors [((3, 5), 'East', 1), ((1, 5), 'West', 1)]
+estado atual (1, 5)
+sucessors [((1, 4), 'South', 1), ((2, 5), 'East', 1)]
+estado atual (1, 4)
+sucessors [((1, 5), 'North', 1), ((1, 3), 'South', 1)]
+Avanca iMaxDepth 6
+estado atual (5, 5)
+sucessors [((5, 4), 'South', 1), ((4, 5), 'West', 1)]
+estado atual (4, 5)
+sucessors [((5, 5), 'East', 1), ((3, 5), 'West', 1)]
+estado atual (3, 5)
+sucessors [((4, 5), 'East', 1), ((2, 5), 'West', 1)]
+estado atual (2, 5)
+sucessors [((3, 5), 'East', 1), ((1, 5), 'West', 1)]
+estado atual (1, 5)
+sucessors [((1, 4), 'South', 1), ((2, 5), 'East', 1)]
+estado atual (1, 4)
+sucessors [((1, 5), 'North', 1), ((1, 3), 'South', 1)]
+estado atual (1, 3)
+sucessors [((1, 4), 'North', 1), ((2, 3), 'East', 1)]
+Avanca iMaxDepth 7
+estado atual (5, 5)
+sucessors [((5, 4), 'South', 1), ((4, 5), 'West', 1)]
+estado atual (4, 5)
+sucessors [((5, 5), 'East', 1), ((3, 5), 'West', 1)]
+estado atual (3, 5)
+sucessors [((4, 5), 'East', 1), ((2, 5), 'West', 1)]
+estado atual (2, 5)
+sucessors [((3, 5), 'East', 1), ((1, 5), 'West', 1)]
+estado atual (1, 5)
+sucessors [((1, 4), 'South', 1), ((2, 5), 'East', 1)]
+estado atual (1, 4)
+sucessors [((1, 5), 'North', 1), ((1, 3), 'South', 1)]
+estado atual (1, 3)
+sucessors [((1, 4), 'North', 1), ((2, 3), 'East', 1)]
+estado atual (2, 3)
+sucessors [((2, 2), 'South', 1), ((1, 3), 'West', 1)]
+Avanca iMaxDepth 8
+estado atual (5, 5)
+sucessors [((5, 4), 'South', 1), ((4, 5), 'West', 1)]
+estado atual (4, 5)
+sucessors [((5, 5), 'East', 1), ((3, 5), 'West', 1)]
+estado atual (3, 5)
+sucessors [((4, 5), 'East', 1), ((2, 5), 'West', 1)]
+estado atual (2, 5)
+sucessors [((3, 5), 'East', 1), ((1, 5), 'West', 1)]
+estado atual (1, 5)
+sucessors [((1, 4), 'South', 1), ((2, 5), 'East', 1)]
+estado atual (1, 4)
+sucessors [((1, 5), 'North', 1), ((1, 3), 'South', 1)]
+estado atual (1, 3)
+sucessors [((1, 4), 'North', 1), ((2, 3), 'East', 1)]
+estado atual (2, 3)
+sucessors [((2, 2), 'South', 1), ((1, 3), 'West', 1)]
+estado atual (2, 2)
+sucessors [((2, 3), 'North', 1), ((2, 1), 'South', 1), ((3, 2), 'East', 1)]
+Avanca iMaxDepth 9
+estado atual (5, 5)
+sucessors [((5, 4), 'South', 1), ((4, 5), 'West', 1)]
+estado atual (4, 5)
+sucessors [((5, 5), 'East', 1), ((3, 5), 'West', 1)]
+estado atual (3, 5)
+sucessors [((4, 5), 'East', 1), ((2, 5), 'West', 1)]
+estado atual (2, 5)
+sucessors [((3, 5), 'East', 1), ((1, 5), 'West', 1)]
+estado atual (1, 5)
+sucessors [((1, 4), 'South', 1), ((2, 5), 'East', 1)]
+estado atual (1, 4)
+sucessors [((1, 5), 'North', 1), ((1, 3), 'South', 1)]
+estado atual (1, 3)
+sucessors [((1, 4), 'North', 1), ((2, 3), 'East', 1)]
+estado atual (2, 3)
+sucessors [((2, 2), 'South', 1), ((1, 3), 'West', 1)]
+estado atual (2, 2)
+sucessors [((2, 3), 'North', 1), ((2, 1), 'South', 1), ((3, 2), 'East', 1)]
+estado atual (3, 2)
+sucessors [((4, 2), 'East', 1), ((2, 2), 'West', 1)]
+Avanca iMaxDepth 10
+estado atual (5, 5)
+sucessors [((5, 4), 'South', 1), ((4, 5), 'West', 1)]
+estado atual (4, 5)
+sucessors [((5, 5), 'East', 1), ((3, 5), 'West', 1)]
+estado atual (3, 5)
+sucessors [((4, 5), 'East', 1), ((2, 5), 'West', 1)]
+estado atual (2, 5)
+sucessors [((3, 5), 'East', 1), ((1, 5), 'West', 1)]
+estado atual (1, 5)
+sucessors [((1, 4), 'South', 1), ((2, 5), 'East', 1)]
+estado atual (1, 4)
+sucessors [((1, 5), 'North', 1), ((1, 3), 'South', 1)]
+estado atual (1, 3)
+sucessors [((1, 4), 'North', 1), ((2, 3), 'East', 1)]
+estado atual (2, 3)
+sucessors [((2, 2), 'South', 1), ((1, 3), 'West', 1)]
+estado atual (2, 2)
+sucessors [((2, 3), 'North', 1), ((2, 1), 'South', 1), ((3, 2), 'East', 1)]
+estado atual (3, 2)
+sucessors [((4, 2), 'East', 1), ((2, 2), 'West', 1)]
+estado atual (4, 2)
+sucessors [((4, 3), 'North', 1), ((3, 2), 'West', 1)]
+Avanca iMaxDepth 11
+estado atual (5, 5)
+sucessors [((5, 4), 'South', 1), ((4, 5), 'West', 1)]
+estado atual (4, 5)
+sucessors [((5, 5), 'East', 1), ((3, 5), 'West', 1)]
+estado atual (3, 5)
+sucessors [((4, 5), 'East', 1), ((2, 5), 'West', 1)]
+estado atual (2, 5)
+sucessors [((3, 5), 'East', 1), ((1, 5), 'West', 1)]
+estado atual (1, 5)
+sucessors [((1, 4), 'South', 1), ((2, 5), 'East', 1)]
+estado atual (1, 4)
+sucessors [((1, 5), 'North', 1), ((1, 3), 'South', 1)]
+estado atual (1, 3)
+sucessors [((1, 4), 'North', 1), ((2, 3), 'East', 1)]
+estado atual (2, 3)
+sucessors [((2, 2), 'South', 1), ((1, 3), 'West', 1)]
+estado atual (2, 2)
+sucessors [((2, 3), 'North', 1), ((2, 1), 'South', 1), ((3, 2), 'East', 1)]
+estado atual (3, 2)
+sucessors [((4, 2), 'East', 1), ((2, 2), 'West', 1)]
+estado atual (4, 2)
+sucessors [((4, 3), 'North', 1), ((3, 2), 'West', 1)]
+estado atual (4, 3)
+sucessors [((4, 2), 'South', 1), ((5, 3), 'East', 1)]
+Avanca iMaxDepth 12
+estado atual (5, 5)
+sucessors [((5, 4), 'South', 1), ((4, 5), 'West', 1)]
+estado atual (4, 5)
+sucessors [((5, 5), 'East', 1), ((3, 5), 'West', 1)]
+estado atual (3, 5)
+sucessors [((4, 5), 'East', 1), ((2, 5), 'West', 1)]
+estado atual (2, 5)
+sucessors [((3, 5), 'East', 1), ((1, 5), 'West', 1)]
+estado atual (1, 5)
+sucessors [((1, 4), 'South', 1), ((2, 5), 'East', 1)]
+estado atual (1, 4)
+sucessors [((1, 5), 'North', 1), ((1, 3), 'South', 1)]
+estado atual (1, 3)
+sucessors [((1, 4), 'North', 1), ((2, 3), 'East', 1)]
+estado atual (2, 3)
+sucessors [((2, 2), 'South', 1), ((1, 3), 'West', 1)]
+estado atual (2, 2)
+sucessors [((2, 3), 'North', 1), ((2, 1), 'South', 1), ((3, 2), 'East', 1)]
+estado atual (3, 2)
+sucessors [((4, 2), 'East', 1), ((2, 2), 'West', 1)]
+estado atual (4, 2)
+sucessors [((4, 3), 'North', 1), ((3, 2), 'West', 1)]
+estado atual (4, 3)
+sucessors [((4, 2), 'South', 1), ((5, 3), 'East', 1)]
+estado atual (5, 3)
+sucessors [((5, 4), 'North', 1), ((4, 3), 'West', 1)]
+Avanca iMaxDepth 13
+estado atual (5, 5)
+sucessors [((5, 4), 'South', 1), ((4, 5), 'West', 1)]
+estado atual (4, 5)
+sucessors [((5, 5), 'East', 1), ((3, 5), 'West', 1)]
+estado atual (3, 5)
+sucessors [((4, 5), 'East', 1), ((2, 5), 'West', 1)]
+estado atual (2, 5)
+sucessors [((3, 5), 'East', 1), ((1, 5), 'West', 1)]
+estado atual (1, 5)
+sucessors [((1, 4), 'South', 1), ((2, 5), 'East', 1)]
+estado atual (1, 4)
+sucessors [((1, 5), 'North', 1), ((1, 3), 'South', 1)]
+estado atual (1, 3)
+sucessors [((1, 4), 'North', 1), ((2, 3), 'East', 1)]
+estado atual (2, 3)
+sucessors [((2, 2), 'South', 1), ((1, 3), 'West', 1)]
+estado atual (2, 2)
+sucessors [((2, 3), 'North', 1), ((2, 1), 'South', 1), ((3, 2), 'East', 1)]
+estado atual (3, 2)
+sucessors [((4, 2), 'East', 1), ((2, 2), 'West', 1)]
+estado atual (4, 2)
+sucessors [((4, 3), 'North', 1), ((3, 2), 'West', 1)]
+estado atual (4, 3)
+sucessors [((4, 2), 'South', 1), ((5, 3), 'East', 1)]
+estado atual (5, 3)
+sucessors [((5, 4), 'North', 1), ((4, 3), 'West', 1)]
+estado atual (5, 4)
+sucessors [((5, 5), 'North', 1), ((5, 3), 'South', 1)]
+Avanca iMaxDepth 14
+estado atual (5, 5)
+sucessors [((5, 4), 'South', 1), ((4, 5), 'West', 1)]
+estado atual (4, 5)
+sucessors [((5, 5), 'East', 1), ((3, 5), 'West', 1)]
+estado atual (3, 5)
+sucessors [((4, 5), 'East', 1), ((2, 5), 'West', 1)]
+estado atual (2, 5)
+sucessors [((3, 5), 'East', 1), ((1, 5), 'West', 1)]
+estado atual (1, 5)
+sucessors [((1, 4), 'South', 1), ((2, 5), 'East', 1)]
+estado atual (1, 4)
+sucessors [((1, 5), 'North', 1), ((1, 3), 'South', 1)]
+estado atual (1, 3)
+sucessors [((1, 4), 'North', 1), ((2, 3), 'East', 1)]
+estado atual (2, 3)
+sucessors [((2, 2), 'South', 1), ((1, 3), 'West', 1)]
+estado atual (2, 2)
+sucessors [((2, 3), 'North', 1), ((2, 1), 'South', 1), ((3, 2), 'East', 1)]
+estado atual (3, 2)
+sucessors [((4, 2), 'East', 1), ((2, 2), 'West', 1)]
+estado atual (4, 2)
+sucessors [((4, 3), 'North', 1), ((3, 2), 'West', 1)]
+estado atual (4, 3)
+sucessors [((4, 2), 'South', 1), ((5, 3), 'East', 1)]
+estado atual (5, 3)
+sucessors [((5, 4), 'North', 1), ((4, 3), 'West', 1)]
+estado atual (5, 4)
+sucessors [((5, 5), 'North', 1), ((5, 3), 'South', 1)]
+estado atual (2, 1)
+sucessors [((2, 2), 'North', 1), ((1, 1), 'West', 1)]
+SAIDA DE movimentos ['South', 'West', 'West', 'West', 'West', 'South', 'South', 'East', 'South', 'South', 'East', 'East', 'North', 'East', 'North', 'West']
+Path found with total cost of 999999 in 4.9 seconds
+Search nodes expanded: 120
+	
