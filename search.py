@@ -245,7 +245,6 @@ def nullHeuristic(state, problem=None):
 	Node for the aStarSearch
 	defines __eq__ and __ne__ method so
 	nodeA == NodeB returns true if Node is the same, ignoring the cost and the Path
-	ignoring Path and
 '''
 class aStarNode:
     def __init__(self, Path, Node):
