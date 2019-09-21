@@ -147,13 +147,49 @@ def depthFirstSearch(problem):
         iMaxDepth +=1
          
             
-
+class greadyNode:
+    def __init__(self, Path, Node, Cost):
+        self.path = Path
+        self.node = Node
+        self.cost = Cost
+    def __eq__(self, other):
+        return self.node == other.node
+    def __ne__(self, other):
+        return not self.__eq__(other)    
 
 def breadthFirstSearch(problem):
-    """Search the shallowest nodes in the search tree first."""
-    
-    "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    import copy
+    from util import PriorityQueue
+    borda = PriorityQueue()
+    closed_list = []
+    current_path =[]
+    cost = 0
+    # pushes initial state to queue with zero priority
+    borda.update(greadyNode(current_path, problem.getStartState(), cost), 0)
+    while not borda.isEmpty():
+                #(current_path,current_node, cost) = borda.pop()
+        CurrentNode = borda.pop()
+        current_path = CurrentNode.path
+        current_node = CurrentNode.node
+        cost =         CurrentNode.cost
+        closed_list.append(current_node)
+        if problem.isGoalState(current_node):
+            #TODO adicionar lista
+            #print "path returned {0}".format(str(current_path))
+            return current_path
+        NewStates = problem.getSuccessors(current_node)
+        cost_until_father = cost #- heuristic(current_node, problem)
+        for (childNode, Action, Cost) in NewStates:
+            # only add not visited nodes
+            if (childNode not in closed_list):
+                # child_cost = cost_until_father + Cost + heuristic(childNode, problem)
+                child_path = copy.deepcopy(current_path)
+                child_path.append(Action)
+                child_cost = 1
+                borda.update(uniformCostNode(child_path, childNode, child_cost), child_cost)
+            else:
+                print"child node {0} already in closed_list".format(str(childNode), str(closed_list)) 
+    util.raiseNotFound()
 
 class uniformCostNode:
     def __init__(self, Path, Node, Cost):
@@ -205,11 +241,16 @@ def nullHeuristic(state, problem=None):
     """
     return 0
 
+'''
+	Node for the aStarSearch
+	defines __eq__ and __ne__ method so
+	nodeA == NodeB returns true if Node is the same, ignoring the cost and the Path
+	ignoring Path and
+'''
 class aStarNode:
-    def __init__(self, Path, Node, Cost):
+    def __init__(self, Path, Node):
         self.path = Path
         self.node = Node
-        self.cost = Cost
     def __eq__(self, other):
         return self.node == other.node
     def __ne__(self, other):
@@ -223,31 +264,25 @@ def aStarSearch(problem, heuristic=nullHeuristic):
     current_path =[]
     cost = 0
     # pushes initial state to queue with zero priority
-    borda.update(aStarNode(current_path, problem.getStartState(), cost), 0)
+    borda.update(aStarNode(current_path, problem.getStartState()), 0)
     while not borda.isEmpty():
-        #(current_path,current_node, cost) = borda.pop()
+		# get the lowest priory node from priority_queue
         CurrentNode = borda.pop()
-        current_path = CurrentNode.path
-        current_node = CurrentNode.node
-        cost =         CurrentNode.cost
-        #print "Expanded node {0} cost {1}".format(str(current_node), str(cost))
-        closed_list.append(current_node)
-        if problem.isGoalState(current_node):
-            #TODO adicionar lista
-            #print "path returned {0}".format(str(current_path))
-            return current_path
-        NewStates = problem.getSuccessors(current_node)
-        cost_until_father = cost - heuristic(current_node, problem)
+        # current_path = CurrentNode.path
+        closed_list.append(CurrentNode.node)
+		# return path if it's the goal state
+        if problem.isGoalState(CurrentNode.node):
+            return CurrentNode.path
+		# get all new states 
+        NewStates = problem.getSuccessors(CurrentNode.node)
         for (childNode, Action, Cost) in NewStates:
             # only add not visited nodes
             if (childNode not in closed_list):
-                # child_cost = cost_until_father + Cost + heuristic(childNode, problem)
-                child_path = copy.deepcopy(current_path)
+                child_path = copy.deepcopy(CurrentNode.path)
                 child_path.append(Action)
                 child_cost = problem.getCostOfActions(child_path) + heuristic(childNode, problem)
-                borda.update(aStarNode(child_path, childNode, child_cost), child_cost)
-            else:
-                print"child node {0} already in closed_list".format(str(childNode), str(closed_list)) 
+				# if a node is already in the open_list, the priority_queue only keeps the lower cost option
+                borda.update(aStarNode(child_path, childNode), child_cost)
     #raise Exception "No path avaliable"
     util.raiseNotDefined()
 
